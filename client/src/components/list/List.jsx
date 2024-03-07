@@ -33,7 +33,7 @@ export default function List({ list }) {
           style={{ display: !isMoved && "none" }}
         />
         <div className="container" ref={listRef}>
-          {list.content && list.content.map((contentItem, index) => (
+          { list.content.map((contentItem, index) => (
             <ListItem key={index} item={contentItem} />
           ))}
         </div>
